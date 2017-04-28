@@ -1,0 +1,22 @@
+{
+  "name": "automatization_protractor",
+  "version": "1.0.0",
+  "description": "learnin protractor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimaNazdratenko/Automatization_with_JS_and_Protractor.git"
+  },
+  "author": "Dima Nazdratenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimaNazdratenko/Automatization_with_JS_and_Protractor/issues"
+  },
+  "homepage": "https://github.com/DimaNazdratenko/Automatization_with_JS_and_Protractor#readme",
+  "dependencies": {
+    "protractor": "^5.1.1"
+  }
+}
