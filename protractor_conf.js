@@ -1,12 +1,17 @@
+var SpecReporter = require('jasmine-spec-reporter').SpecReporter;
+
 exports.config = {
-
-
     capabilities: {
         'browserName': 'chrome'
     },
 
     onPrepare: function () {
         browser.ignoreSynchronization = true;
+        jasmine.getEnv().addReporter(new SpecReporter({
+            spec: {
+                displayStacktrace: true
+            }
+        }));
     },
 
     framework: 'jasmine',

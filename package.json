@@ -18,6 +18,7 @@
   "homepage": "https://github.com/DimaNazdratenko/Automatization_with_JS_and_Protractor#readme",
   "dependencies": {},
   "devDependencies": {
+    "jasmine-spec-reporter": "^4.2.1",
     "protractor": "^5.1.2"
   }
 }
