@@ -1,4 +1,3 @@
-var SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 
 exports.config = {
     capabilities: {
@@ -7,11 +6,6 @@ exports.config = {
 
     onPrepare: function () {
         browser.ignoreSynchronization = true;
-        jasmine.getEnv().addReporter(new SpecReporter({
-            spec: {
-                displayStacktrace: true
-            }
-        }));
     },
 
     framework: 'jasmine',
