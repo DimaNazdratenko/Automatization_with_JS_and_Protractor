@@ -16,7 +16,8 @@
     "url": "https://github.com/DimaNazdratenko/Automatization_with_JS_and_Protractor/issues"
   },
   "homepage": "https://github.com/DimaNazdratenko/Automatization_with_JS_and_Protractor#readme",
-  "dependencies": {
-    "protractor": "^5.1.1"
+  "dependencies": {},
+  "devDependencies": {
+    "protractor": "^5.1.2"
   }
 }
