@@ -14,11 +14,8 @@ describe('Protractor Demo App', function () {
         browser.wait(waitAjax(), 15000);
 
         var xpath_table_values = '//table//tr[1]/td';
-        element.all(by.xpath(xpath_table_values)).getText().then(function (value) {
-            console.log(value);
-        });
+        var expected_array = ['1206', 'alice_c', '', '', '55458', '', '', 'xml1'];
 
-        var expected_array = ['1206', 'alice_c', '', '', '56365', '', '', 'xml1'];
         expect(element.all(by.xpath(xpath_table_values)).getText()).toEqual(expected_array);
     });
     it('Check on games page', function () {
@@ -28,11 +25,8 @@ describe('Protractor Demo App', function () {
         browser.wait(waitAjax(), 15000);
 
         var xpath_table_values = '//table//tr[1]/td';
-        element.all(by.xpath(xpath_table_values)).getText().then(function (value) {
-            console.log(value);
-        });
+        var expected_array = ['1206', 'alice_c', '', '', '55458', '', '', 'xml'];
 
-        var expected_array = ['1206', 'alice_c', '', '', '56365', '', '', 'xml'];
         expect(element.all(by.xpath(xpath_table_values)).getText()).toEqual(expected_array);
     });
 });
