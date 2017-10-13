@@ -1,5 +1,5 @@
 var SpecReporter = require('jasmine-spec-reporter').SpecReporter;
-var consoleRreport = new SpecReporter({
+var consoleReport = new SpecReporter({
     spec: {
         displayStacktrace: true
     }
@@ -25,7 +25,7 @@ exports.config = {
         browser.ignoreSynchronization = true;
         browser.driver.manage().window().setSize(1920, 1080);
         jasmine.getEnv().addReporter(screenshotReport);
-        jasmine.getEnv().addReporter(consoleRreport);
+        jasmine.getEnv().addReporter(consoleReport);
     },
 
     framework: 'jasmine',
