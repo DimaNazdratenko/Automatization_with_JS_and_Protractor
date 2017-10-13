@@ -8,7 +8,12 @@ var consoleRreport = new SpecReporter({
 var HtmlScreenshotReporter = require('protractor-jasmine2-screenshot-reporter');
 var screenshotReport = new HtmlScreenshotReporter({
     dest: 'C:/Windows/Temp/selenium-screenshot/protractor',
-    filename: 'my-report.html'
+    filename: 'Report.html',
+    captureOnlyFailedSpecs: true,
+    reportFailedUrl: true,
+    pathBuilder: function(currentSpec) {
+        return currentSpec.fullName;
+    }
 });
 
 exports.config = {
