@@ -20,7 +20,7 @@
   "dependencies": {},
   "devDependencies": {
     "jasmine-spec-reporter": "^4.2.1",
-    "protractor": "^5.1.2",
+    "protractor": "^5.2.2",
     "protractor-jasmine2-screenshot-reporter": "^0.4.1"
   }
 }

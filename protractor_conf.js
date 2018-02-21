@@ -1,5 +1,5 @@
 var SpecReporter = require('jasmine-spec-reporter').SpecReporter;
-var consoleRreport = new SpecReporter({
+var consoleReport = new SpecReporter({
     spec: {
         displayStacktrace: true
     }
@@ -8,7 +8,12 @@ var consoleRreport = new SpecReporter({
 var HtmlScreenshotReporter = require('protractor-jasmine2-screenshot-reporter');
 var screenshotReport = new HtmlScreenshotReporter({
     dest: 'C:/Windows/Temp/selenium-screenshot/protractor',
-    filename: 'my-report.html'
+    filename: 'Report.html',
+    captureOnlyFailedSpecs: true,
+    reportFailedUrl: true,
+    pathBuilder: function(currentSpec) {
+        return currentSpec.fullName;
+    }
 });
 
 exports.config = {
@@ -20,7 +25,7 @@ exports.config = {
         browser.ignoreSynchronization = true;
         browser.driver.manage().window().setSize(1920, 1080);
         jasmine.getEnv().addReporter(screenshotReport);
-        jasmine.getEnv().addReporter(consoleRreport);
+        jasmine.getEnv().addReporter(consoleReport);
     },
 
     framework: 'jasmine',
